@@ -1,0 +1,24 @@
+
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title%}
+    <title>This Parent HtmlPage</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+   <center> 
+
+<h1 class="btn btn-danger">hello world</h1>
+<h1>One Parent Html Page To One Child Html Page</h1>
+
+{% block body_block %}
+{% endblock %}
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</center>
+</body>
+</html>
